@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  border-radius: 20px;
+}
+.noteContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  background-color: #9ff378;
+  padding: 20px;
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+.card-container {
+  margin: 25px;
+  display: flex;
+  flex-wrap: wrap;  
+  gap: 20px;        
+  /* justify-content: space-between;  */
+
+}
+
+.card{
+  width: 23%; 
+  box-sizing: border-box; 
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 10px;
+}
+.date{
+  border: none;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #e4ee8c;
+}
+@media (max-width: 768px) {
+  form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 578px) {
+  form {
+    width: 100%;
+  }
+}
+
+ @media (max-width: 578px) { 
+  .card {
+    width: 100% !important;
+  }
+ }
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 48%;
+  }
+}
